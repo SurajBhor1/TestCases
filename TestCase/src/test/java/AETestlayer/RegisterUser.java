@@ -1,4 +1,4 @@
-package W3School.TestCase;
+package AETestlayer;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;

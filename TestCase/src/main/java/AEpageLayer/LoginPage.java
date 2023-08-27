@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Utility.DataRead;
+
 public class LoginPage {
 	public WebDriver driver;
 	public LoginPage (WebDriver driver) {
@@ -21,10 +23,10 @@ public class LoginPage {
 	WebElement Login_bttn;
 	
 	public void enterCredential() {
-		
+		DataRead data=new DataRead();
 		Login_link.click();
-		Email_text.sendKeys("david456@gmail.com");
-		 pswd_text.sendKeys("david456");
+		Email_text.sendKeys(data.user);
+		 pswd_text.sendKeys(data.pass);
 	}
 	public void clickLogin() {
 		Login_bttn.click();

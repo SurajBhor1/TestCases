@@ -19,19 +19,14 @@ public class Initialize {
 	public WebDriver driver;
 	@ BeforeTest
 	public void setup() throws IOException {
-//		WebDriverManager.chromedriver().setup();
-//		 driver=new ChromeDriver();
-		WebDriverManager.edgedriver().setup();
-		driver=new EdgeDriver();
-		Properties prop=new Properties();
-		FileInputStream read=new FileInputStream(System.getProperty("user.dir")+"\\TestData\\setUp.properties");
+	WebDriverManager.chromedriver().setup();
+	driver=new ChromeDriver();
+//		WebDriverManager.edgedriver().setup();
+//		driver=new EdgeDriver();
+	//DataRead data=new DataRead();
+	
 		
-		prop.load(read);
-		
-	String str=	(String) prop.get("url");
-	read.close();
-		
-		driver.get(str);
+		//driver.get(data.getData());
 	}
 
 }

@@ -8,5 +8,6 @@ public class Animal {
 	}
 	public void walk() {
 		System.out.println("animal can walk");
+		System.out.println();
 	}
 }
